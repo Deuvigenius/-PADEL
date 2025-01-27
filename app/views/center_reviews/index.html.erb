@@ -1,0 +1,16 @@
+<p style="color: green"><%= notice %></p>
+
+<% content_for :title, "Center reviews" %>
+
+<h1>Center reviews</h1>
+
+<div id="center_reviews">
+  <% @center_reviews.each do |center_review| %>
+    <%= render center_review %>
+    <p>
+      <%= link_to "Show this center review", center_review %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New center review", new_center_review_path %>

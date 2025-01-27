@@ -1,0 +1,12 @@
+<% content_for :title, "Editing padel court" %>
+
+<h1>Editing padel court</h1>
+
+<%= render "form", padel_court: @padel_court %>
+
+<br>
+
+<div>
+  <%= link_to "Show this padel court", @padel_court %> |
+  <%= link_to "Back to padel courts", padel_courts_path %>
+</div>

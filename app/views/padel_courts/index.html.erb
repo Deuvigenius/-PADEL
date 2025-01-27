@@ -1,0 +1,16 @@
+<p style="color: green"><%= notice %></p>
+
+<% content_for :title, "Padel courts" %>
+
+<h1>Padel courts</h1>
+
+<div id="padel_courts">
+  <% @padel_courts.each do |padel_court| %>
+    <%= render padel_court %>
+    <p>
+      <%= link_to "Show this padel court", padel_court %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New padel court", new_padel_court_path %>

@@ -1,0 +1,12 @@
+<% content_for :title, "Editing center review" %>
+
+<h1>Editing center review</h1>
+
+<%= render "form", center_review: @center_review %>
+
+<br>
+
+<div>
+  <%= link_to "Show this center review", @center_review %> |
+  <%= link_to "Back to center reviews", center_reviews_path %>
+</div>

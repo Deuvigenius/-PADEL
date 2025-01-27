@@ -1,0 +1,23 @@
+.container-center {
+  flex: 3;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: beige;
+}
+
+.container-court {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.container-court-rent {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  // gap: 30px;
+}
